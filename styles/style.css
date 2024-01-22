@@ -52,7 +52,6 @@ body {
 
 .apresentacao__conteudo {
     width: 50%;
-    height: 357px;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -130,5 +129,10 @@ body {
     
     .apresentacao {
         flex-direction: column-reverse;
+        padding: 1% 1%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
     }
 }

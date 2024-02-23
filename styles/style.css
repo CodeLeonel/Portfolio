@@ -178,6 +178,7 @@ body {
     
     .cabecalho {
         padding: 10%;
+        margin: 0% 0% 10% 0%;
     }
 
     .cabecalho__menu {

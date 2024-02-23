@@ -175,6 +175,7 @@ body {
 }
 
 @media (max-width: 500px) {
+    
     .cabecalho {
         padding: 10%;
     }
@@ -207,5 +208,8 @@ body {
         text-align: justify;
     }
 
-    
+    .apresentacao_imagem {
+        width: 50%;
+    }
+
 }

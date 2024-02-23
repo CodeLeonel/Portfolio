@@ -194,10 +194,14 @@ body {
 
     .apresentacao__conteudo {
         padding: 15px;
-        width: 80%;
+        width: auto;
         justify-content: center;
         align-items: center;
         text-align: justify;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 2rem;
     }
 
     .apresentacao__curriculo {

@@ -173,3 +173,37 @@ body {
         width: auto;
     }
 }
+
+@media (max-width: 500px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 1% 1%;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    .apresentacao__curriculo {
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        text-align: justify;
+    }
+
+    
+}

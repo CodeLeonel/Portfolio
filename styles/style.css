@@ -177,6 +177,10 @@ body {
         text-align: justify;
     }
 
+    .apresentacao__links__link  {
+        width: 60%;
+    }
+
     .apresentacao_imagem {
         width: 50%;
     }

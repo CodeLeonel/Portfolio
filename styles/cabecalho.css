@@ -1,0 +1,130 @@
+.cabecalho {
+    padding: 2% 0% 0% 4%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__menu {
+    display: flex;
+    list-style: none;
+    gap: 0.5rem;
+}
+
+.cabecalho__menu__menu__link {
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    color: var(--cor-terciaria);
+    text-decoration: none;
+}
+
+.cabecalho__menu__menu a {
+    display: block;
+    padding: 1rem;
+}
+
+.cabecalho__menu__botao {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width: 600px) {
+    
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .cabecalho__menu__menu {
+        display: block;
+        position: absolute;
+        top: 5.5rem;
+        left: 0;
+        background: var(--cor-primaria);
+        text-align: center;
+        width: 100%;
+        height: 0;
+        z-index: 1;
+        visibility: hidden;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .cabecalho__menu__menu a {
+        padding: 1rem 0;
+        margin-inline: 1rem;
+        border-bottom: 0.0625rem solid rgba(0, 0, 0, 0.16);
+        border-radius: 0;
+    }
+
+    .cabecalho__menu__botao {
+        background: none;
+        border: none;
+        font: inherit;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        color: var(--cor-terciaria);
+        padding-block: 1rem;
+        cursor: pointer;
+    }
+
+    .cabecalho__menu__botao__hamburguer{
+        border-top: 0.125rem solid;
+        width: 1.25rem;
+    }
+
+    .cabecalho__menu__botao__hamburguer::before,
+    .cabecalho__menu__botao__hamburguer::after {
+        content: " ";
+        display: block;
+        width: 1.25rem;
+        height: 0.125rem;
+        background: currentColor;
+        margin-top: 0.3125rem;
+        position: relative;
+        transition: 0.3s;
+    }
+
+    .cabecalho__menu.active .cabecalho__menu__menu {
+        display: block;
+        visibility: visible;
+        height: calc(100vh - 4.6875rem);
+        overflow-y: auto;
+    }
+
+    .cabecalho__menu.active .cabecalho__menu__botao__hamburguer {
+        border-top-color: transparent;
+    }
+
+    .cabecalho__menu.active .cabecalho__menu__botao__hamburguer::before {
+        transform: rotate(135deg);
+    }
+
+    .cabecalho__menu.active .cabecalho__menu__botao__hamburguer::after {
+        transform: rotate(-135deg);
+        top: -0.4375rem;
+    }
+
+}

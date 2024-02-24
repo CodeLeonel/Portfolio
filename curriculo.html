@@ -4,15 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css"/>
+    <link rel="stylesheet" href="./styles/cabecalho.css">
+    <script defer src="./scripts/cabecalho.js"></script>
     <title>Currículo</title>
 </head>
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="curriculo.html">Currículo</a>
-            <a class="cabecalho__menu__link" href="projetos.html">Projetos</a>
+            <button class="cabecalho__menu__botao" 
+            aria-label="Abrir Menu"
+            aria-haspopup="true"
+            aria-controls="menu"
+            aria-expanded="false">
+                <span class="cabecalho__menu__botao__hamburguer"></span>
+            </button>
+            <ul class="cabecalho__menu__menu" id="menu" role="menu">
+                <li><a class="cabecalho__menu__menu__link" href="index.html">Home</a></li>
+                <li><a class="cabecalho__menu__menu__link" href="about.html">Sobre mim</a></li>
+                <li><a class="cabecalho__menu__menu__link" href="curriculo.html">Currículo</a></li>
+                <li><a class="cabecalho__menu__menu__link" href="projetos.html">Projetos</a></li>
+            </ul>
         </nav>
     </header>
     <main class="apresentacao">

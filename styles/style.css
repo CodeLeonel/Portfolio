@@ -15,29 +15,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     box-sizing: border-box;
-}
-
-.cabecalho {
-    padding: 2% 0% 0% 4%;
-}
-
-.cabecalho__menu {
-    display: flex;
-    gap: 80px;
-}
-
-.cabecalho__menu__link {
-    font-size: 1.5rem;
-    font-family: var(--fonte-secundaria);
-    font-weight: 600;
-    color: var(--cor-terciaria);
-    text-decoration: none;
 }
 
 .apresentacao {
@@ -155,15 +139,7 @@ body {
 
 
 @media (max-width: 1200px) {
-    .cabecalho {
-        padding: 10%;
-    }
 
-    .cabecalho__menu {
-        display: flex;
-        justify-content: center;
-    }
-    
     .apresentacao {
         flex-direction: column-reverse;
         padding: 1% 1%;
@@ -174,19 +150,7 @@ body {
     }
 }
 
-@media (max-width: 500px) {
-    
-    .cabecalho {
-        padding: 10%;
-        margin: 0% 0% 10% 0%;
-    }
-
-    .cabecalho__menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 600px) {
     
     .apresentacao {
         flex-direction: column-reverse;
@@ -202,7 +166,7 @@ body {
     }
 
     .apresentacao__conteudo__titulo {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 
     .apresentacao__curriculo {
